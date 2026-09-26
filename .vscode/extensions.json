@@ -5,6 +5,8 @@
         // C/C++ 扩展:提供 ▷ 运行/调试按钮 + F5 gdb 断点调试(读取本仓库 tasks.json/launch.json)
         "ms-vscode.cpptools",
         // Code Runner:纯网页可用的 ▷ 一键运行按钮(配置见 .vscode/settings.json,已设为 gnu17)
-        "formulahendry.code-runner"
+        "formulahendry.code-runner",
+        // Hex Editor:十六进制查看原始字节,配合调试"看见"内存里存了什么(见 README 内存可视化一节)
+        "ms-vscode.hexeditor"
     ]
 }
