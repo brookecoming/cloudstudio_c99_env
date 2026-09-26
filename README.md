@@ -154,6 +154,9 @@ cloudstudio_c99_env/
 │   ├── 第1章_编译链接运行流程.mmd
 │   ├── 第3章_选择结构流程图.mmd
 │   └── README.md      #   渲染/缩放/导出说明
+├── slides/            # 幻灯片(PPT):Marp Markdown 幻灯片 + 课件 PDF 查看说明
+│   ├── 第1章_示例幻灯片.md
+│   └── README.md      #   Markdown 渲染 / Marp / pptx转PDF 说明
 ├── main.c            # 入门示例源码,含 C99 特性测试
 ├── Makefile          # 终端 make 编译脚本
 ├── .gitignore        # 忽略编译产物
@@ -247,6 +250,16 @@ Cloud Studio 自带在线 AI。本仓库通过 **`AGENTS.md`** 给它设定了�
 - **零安装保底**:<https://mermaid.live> 粘贴 `.mmd` 内容即渲染/缩放/导出。
 
 > 每章一个 `.mmd`,命名如 `第3章_选择结构流程图.mmd`;详见 `mermaid/README.md`。
+
+---
+
+## 九、Markdown 渲染 与 PPT/幻灯片
+
+- **Markdown**:内置预览 `Ctrl+Shift+V` 即可渲染(无需插件);增强装 `Markdown Preview Enhanced`(公式/导出 PDF/HTML)。
+- **PPT 路线 A(推荐)**:用 **Marp**(`marp-team.marp-vscode`)把幻灯片写成 Markdown(见 `slides/`),实时分页预览,可**导出 PPTX/PDF/HTML**。
+- **PPT 路线 B(现成 .pptx)**:网页 IDE 渲染 `.pptx` 支持差;用 Office/WPS **转成 PDF** 放仓库,装 **PDF** 插件(`tomoki1207.pdf`)在线看。
+
+> 详见 `slides/README.md`。
 
 ---
 

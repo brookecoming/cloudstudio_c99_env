@@ -11,6 +11,12 @@
         // Mermaid Editor:打开 .mmd 即在线预览课本流程图/原理图,支持导出 PNG/SVG(见 mermaid/ 目录)
         "tomoyukim.vscode-mermaid-editor",
         // Markdown Preview Mermaid Support:让嵌在 .md 里的 mermaid 图在 Markdown 预览中渲染
-        "bierner.markdown-mermaid"
+        "bierner.markdown-mermaid",
+        // Markdown Preview Enhanced:增强版 Markdown 渲染(数学公式/图表/导出 PDF/HTML);内置预览已够用,此为增强
+        "shd101wyy.markdown-preview-enhanced",
+        // Marp for VS Code:用 Markdown 写幻灯片(PPT),实时预览并导出 PPTX/PDF/HTML(见 slides/ 目录)
+        "marp-team.marp-vscode",
+        // PDF:在 IDE 内直接查看 .pdf(如把 .pptx 转成 PDF 后在线看)
+        "tomoki1207.pdf"
     ]
 }
