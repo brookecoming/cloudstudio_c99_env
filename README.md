@@ -105,10 +105,19 @@ cloudstudio_c99_env/
 ├── .vscode/
 │   ├── tasks.json    # 一键编译配置(定义 gcc 用什么参数编译)
 │   └── launch.json   # 一键调试配置(F5 时的 gdb 断点调试行为)
-├── main.c            # 示例源码,含 C99 特性测试
+├── multifile_demo/    # 【进阶】多文件工程 + 分步编译示例(详见其子目录 README)
+│   ├── calc.h        #   头文件:函数声明
+│   ├── calc.c        #   实现文件:函数实现
+│   ├── main.c        #   主程序:调用函数
+│   └── Makefile      #   分步编译脚本
+├── main.c            # 入门示例源码,含 C99 特性测试
 ├── Makefile          # 终端 make 编译脚本
+├── .gitignore        # 忽略编译产物
+├── .gitattributes    # 统一 LF 换行符(保障 Linux 下 make 正常)
 └── README.md         # 本说明文件
 ```
+
+> 学完单文件的 `main.c` 后,想看**多个文件怎么组织、怎么分步编译链接**,进 `multifile_demo/` 目录看里面的 README。
 
 ---
 

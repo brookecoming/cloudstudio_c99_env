@@ -1,5 +1,6 @@
 # 编译产物(make / gcc 生成,不应提交)
 main
+app
 *.o
 *.out
 *.exe
