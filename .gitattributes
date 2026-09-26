@@ -1,0 +1,11 @@
+# 统一使用 LF 换行符
+# 原因:本仓库供 Cloud Studio(Linux)使用,Makefile 等文件若为 CRLF,
+#       make 会报 "missing separator" / 命令执行失败。强制 LF 可跨平台防坑。
+* text=auto eol=lf
+
+# 明确指定关键文本文件
+Makefile text eol=lf
+*.c      text eol=lf
+*.h      text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf

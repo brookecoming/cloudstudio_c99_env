@@ -1,0 +1,10 @@
+# 编译产物(make / gcc 生成,不应提交)
+main
+*.o
+*.out
+*.exe
+*.dSYM/
+
+# 编辑器/系统临时文件
+*.swp
+.DS_Store
