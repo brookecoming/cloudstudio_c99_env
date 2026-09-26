@@ -1,0 +1,10 @@
+{
+    // 工作区推荐扩展:导入本仓库后,IDE 会提示安装这些扩展(点一下即可)
+    // 装好后编辑器右上角就会出现"运行箭头 ▷",F5 断点调试也可用
+    "recommendations": [
+        // C/C++ 扩展:提供 ▷ 运行/调试按钮 + F5 gdb 断点调试(读取本仓库 tasks.json/launch.json)
+        "ms-vscode.cpptools",
+        // Code Runner:纯网页可用的 ▷ 一键运行按钮(配置见 .vscode/settings.json,已设为 gnu17)
+        "formulahendry.code-runner"
+    ]
+}

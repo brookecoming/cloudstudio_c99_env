@@ -96,6 +96,20 @@ gcc -std=gnu17 -Wall -g main.c -o main
 ./main
 ```
 
+### 附:导入仓库后,一键装扩展、调出运行箭头 ▷
+
+本地 VSCode 里编辑器右上角那个 **▷ 运行箭头**,是**扩展**画的,不是仓库配置画的。
+本仓库已通过 `.vscode/extensions.json` 把需要的扩展设为**工作区推荐**:
+
+1. 导入仓库后,IDE 一般会**弹出提示**或在扩展面板**高亮"推荐扩展"**,点「安装」即可;
+2. 若没弹提示,就手动到扩展面板搜下面两个 id 安装:
+   - `ms-vscode.cpptools`(C/C++:▷ 运行 + F5 断点调试)
+   - `formulahendry.code-runner`(Code Runner:纯网页可用的 ▷ 一键运行)
+3. 装完重载窗口,打开 `main.c`,右上角就有 **▷**,点它或按 F5 即可运行/调试。
+
+> 说明:出于安全,IDE 不允许仓库"静默强制"装扩展,所以是"导入 → 点一下安装"这一气呵成,而非完全无人值守。
+> `.vscode/settings.json` 已把 Code Runner 配成用 `-std=gnu17` 编译、并在终端运行(支持 `scanf` 输入)。
+
 ---
 
 ## 四、目录结构
@@ -103,8 +117,10 @@ gcc -std=gnu17 -Wall -g main.c -o main
 ```text
 cloudstudio_c99_env/
 ├── .vscode/
-│   ├── tasks.json    # 一键编译配置(定义 gcc 用什么参数编译)
-│   └── launch.json   # 一键调试配置(F5 时的 gdb 断点调试行为)
+│   ├── tasks.json      # 一键编译配置(定义 gcc 用什么参数编译)
+│   ├── launch.json     # 一键调试配置(F5 时的 gdb 断点调试行为)
+│   ├── extensions.json # 推荐扩展清单(导入后提示安装,调出 ▷ 箭头)
+│   └── settings.json   # Code Runner 用 gnu17 + 终端运行(支持 scanf)
 ├── multifile_demo/    # 【进阶】多文件工程 + 分步编译示例(详见其子目录 README)
 │   ├── calc.h        #   头文件:函数声明
 │   ├── calc.c        #   实现文件:函数实现

@@ -1,0 +1,14 @@
+{
+    // ===== Code Runner 配置:让 ▷ 按钮用 gnu17 编译,并在终端运行 =====
+    // runInTerminal=true 很关键:默认输出面板不支持键盘输入,
+    // 开了它,scanf / getchar 这类需要输入的程序才能正常交互
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "c": "cd $dir && gcc -std=gnu17 -Wall -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ -std=gnu17 -Wall -g $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+
+    // ===== C/C++ 扩展:IntelliSense 按 C17 解析(与编译标准 gnu17 对齐)=====
+    "C_Cpp.default.cStandard": "c17"
+}
