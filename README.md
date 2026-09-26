@@ -121,11 +121,15 @@ cloudstudio_c99_env/
 │   ├── launch.json     # 一键调试配置(F5 时的 gdb 断点调试行为)
 │   ├── extensions.json # 推荐扩展清单(导入后提示安装,调出 ▷ 箭头)
 │   └── settings.json   # Code Runner 用 gnu17 + 终端运行(支持 scanf)
-├── multifile_demo/    # 【进阶】多文件工程 + 分步编译示例(详见其子目录 README)
-│   ├── calc.h        #   头文件:函数声明
-│   ├── calc.c        #   实现文件:函数实现
-│   ├── main.c        #   主程序:调用函数
-│   └── Makefile      #   分步编译脚本
+├── demo/              # 示例合集:每个子目录一个主题,自带 README
+│   ├── 自定义头文件/   #   自己写 .h(放函数定义),main.c 包含使用;单编译单元可用 ▷/F5
+│   │   ├── max.h     #     自定义头文件:max 函数定义
+│   │   └── main.c    #     主程序:#include "max.h" 后调用
+│   └── multifile_demo/ #  【进阶】多文件工程 + 分步编译(头文件放声明、.c 放定义)
+│       ├── calc.h    #     头文件:函数声明
+│       ├── calc.c    #     实现文件:函数实现
+│       ├── main.c    #     主程序:调用函数
+│       └── Makefile  #     分步编译脚本
 ├── main.c            # 入门示例源码,含 C99 特性测试
 ├── Makefile          # 终端 make 编译脚本
 ├── .gitignore        # 忽略编译产物
@@ -134,7 +138,9 @@ cloudstudio_c99_env/
 └── README.md         # 本说明文件
 ```
 
-> 学完单文件的 `main.c` 后,想看**多个文件怎么组织、怎么分步编译链接**,进 `multifile_demo/` 目录看里面的 README。
+> 所有示例都在 `demo/` 目录,每个子目录一个主题、自带 README:
+> - `demo/自定义头文件/`:学**自己写头文件**(`.h` 里放函数定义,`main.c` 包含使用),单编译单元,可用 ▷/F5;
+> - `demo/multifile_demo/`:学**多文件工程 + 分步编译链接**(头文件放声明、`.c` 放定义),用 `make`。
 
 ---
 
