@@ -20,14 +20,14 @@
 - **平台**:Cloud Studio(Linux 容器),编译器 `gcc`,调试器 `gdb`。
 - **构建方式**:
   - 单文件:`.vscode/tasks.json`(F5 / ▷)或 Code Runner(已配 gnu17 + 终端运行);
-  - 多文件:`make`(分步编译 + 链接,示例见 `demo/multifile_demo/`)。
+  - 多文件:`make`(分步编译 + 链接,示例见 `1_demo/multifile_demo/`)。
 - **学生常踩的坑(报错时优先排查)**:
   1. 用了非标准头/函数:`conio.h`、`getch()`、`clrscr()`、`system("pause")` —— 现代 Linux/gcc **不支持**(老教材遗留)。
   2. `Makefile` 报 `missing separator`:recipe 行用了**空格**而非 **Tab**。
   3. `undefined reference to 'xxx'`:多文件链接时**漏了对应 `.o`**。
   4. `scanf` 卡住/读不到输入:运行方式不支持标准输入,应改用**终端运行**。
   5. 中文输出乱码:源文件不是 **UTF-8** 编码。
-  6. 在 `demo/multifile_demo/` 里按 F5/▷ 只编译单文件导致链接失败(应使用 `make`)。
+  6. 在 `1_demo/multifile_demo/` 里按 F5/▷ 只编译单文件导致链接失败(应使用 `make`)。
 
 ---
 
@@ -43,7 +43,7 @@
 4. **不超纲**:只用 C99 / gnu17 范围内的语法;不引入 C23 新关键字、不滥用 GNU 特有扩展(确需使用时要说明)。
 5. **中文回答**;专业术语**首次出现**时给一句通俗解释。
 6. **代码要能跑**:给出的示例必须能在本环境 `gcc -std=gnu17` 下编译通过。
-7. 涉及多文件 / 工程组织问题时,提醒学生参考 `demo/multifile_demo/README.md`;涉及自定义头文件时参考 `demo/自定义头文件/README.md`。
+7. 涉及多文件 / 工程组织问题时,提醒学生参考 `1_demo/multifile_demo/README.md`;涉及自定义头文件时参考 `1_demo/自定义头文件/README.md`。
 
 ---
 
