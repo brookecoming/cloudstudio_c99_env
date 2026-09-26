@@ -7,6 +7,10 @@
         // Code Runner:纯网页可用的 ▷ 一键运行按钮(配置见 .vscode/settings.json,已设为 gnu17)
         "formulahendry.code-runner",
         // Hex Editor:十六进制查看原始字节,配合调试"看见"内存里存了什么(见 README 内存可视化一节)
-        "ms-vscode.hexeditor"
+        "ms-vscode.hexeditor",
+        // Mermaid Editor:打开 .mmd 即在线预览课本流程图/原理图,支持导出 PNG/SVG(见 mermaid/ 目录)
+        "tomoyukim.vscode-mermaid-editor",
+        // Markdown Preview Mermaid Support:让嵌在 .md 里的 mermaid 图在 Markdown 预览中渲染
+        "bierner.markdown-mermaid"
     ]
 }

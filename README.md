@@ -150,6 +150,10 @@ cloudstudio_c99_env/
 │       ├── calc.c    #     实现文件:函数实现
 │       ├── main.c    #     主程序:调用函数
 │       └── Makefile  #     分步编译脚本
+├── mermaid/           # 课本章节流程图/原理图(Mermaid 文本,可渲染/缩放/导出)
+│   ├── 第1章_编译链接运行流程.mmd
+│   ├── 第3章_选择结构流程图.mmd
+│   └── README.md      #   渲染/缩放/导出说明
 ├── main.c            # 入门示例源码,含 C99 特性测试
 ├── Makefile          # 终端 make 编译脚本
 ├── .gitignore        # 忽略编译产物
@@ -230,6 +234,19 @@ Cloud Studio 自带在线 AI。本仓库通过 **`AGENTS.md`** 给它设定了�
 
 **Q4:一定要联网吗?**
 是。Cloud Studio 是云端环境,编译运行都在云上完成,需要联网,但对你电脑配置几乎没要求。
+
+---
+
+## 八、mermaid 章节流程图(在线渲染 / 缩放 / 导出)
+
+`mermaid/` 目录按章节存放课本流程图/原理图(Mermaid 纯文本,能进 Git、能改)。
+
+- **渲染**:装推荐扩展 **Mermaid Editor**(`tomoyukim.vscode-mermaid-editor`),打开 `.mmd` 即实时预览;嵌在 `.md` 里的图由 `bierner.markdown-mermaid` 在 Markdown 预览渲染。
+- **缩放**:预览内用 VS Code 窗口缩放 `Ctrl +` / `Ctrl -`;或导出 **SVG** 后本地无限放大不失真。
+- **下载到本地**:Mermaid Editor 预览面板有**导出 PNG / SVG** 按钮。
+- **零安装保底**:<https://mermaid.live> 粘贴 `.mmd` 内容即渲染/缩放/导出。
+
+> 每章一个 `.mmd`,命名如 `第3章_选择结构流程图.mmd`;详见 `mermaid/README.md`。
 
 ---
 

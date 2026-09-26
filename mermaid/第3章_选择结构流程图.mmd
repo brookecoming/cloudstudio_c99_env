@@ -1,0 +1,8 @@
+flowchart TD
+    S([开始]) --> I[输入 x, y]
+    I --> C{x > y ?}
+    C -- 是 --> M[max = x]
+    C -- 否 --> N[max = y]
+    M --> O[输出 max]
+    N --> O
+    O --> E([结束])
