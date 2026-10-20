@@ -1,0 +1,26 @@
+@startuml
+title 例 4.9 选择结构盒图（求根 · 先验 a 再按 disc 分三路）
+start
+:输入 a, b, c;
+:输出 The equation;
+if (fabs(a)<=1e-6 ?) then (是：a=0)
+  :输出 is not a quadratic;
+else (否：二次方程)
+  :disc = b*b - 4*a*c;
+  if (fabs(disc)<=1e-6 ?) then (是：disc=0)
+    :输出 has two equal roots: -b/(2a);
+  else (否)
+    if (disc>1e-6 ?) then (是：disc>0)
+      :x1=(-b+sqrt(disc))/(2a);
+      :x2=(-b-sqrt(disc))/(2a);
+      :输出 has distinct real roots: x1 and x2;
+    else (否：disc<0)
+      :realpart=-b/(2a);
+      :imagpart=sqrt(-disc)/(2a);
+      :输出 has complex roots:;
+      :输出 realpart+imagpart i 与 realpart-imagpart i;
+    endif
+  endif
+endif
+stop
+@enduml

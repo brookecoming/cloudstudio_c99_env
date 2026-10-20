@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§4.2　用 if 语句实现选择结构</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §4.2，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="232" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P85</tspan>　从例 4.1 可以看到：在 C 语言中选择结构主要是用 if 语句实现的。</text>
+<text x="70" y="277" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P85</tspan>　关键是怎样实现两个变量的值的互换。不能把两个变量直接互相赋值</text>
+<text x="70" y="322" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P85</tspan>　为了实现互换。必须借助于第 3 个变量。</text>
+<text x="70" y="367" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P89</tspan>　注意 else 子句不能作为语句单独使用，它必须是 if 语句的一部分，与 if 配对使用。</text>
+<text x="70" y="412" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P89</tspan>　注意：复合语句应当用花括号括起来。</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】if 的三种形式；两变量互换要借第 3 个变量　　【难点】else 与 if 的配对、复合语句的边界</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】else 不能单独用；多句必须用 { } 框成复合语句</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.3　运算符和表达式（★★会认）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §3.3，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="248" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P52</tspan>　两个整数相除的结果为整数，如 5/3 的结果值为 1，舍去小数部分</text>
+<text x="70" y="302" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P53</tspan>　用算术运算符和括号将运算对象（也称操作数）连接起来的、符合 C 语法规则的式子，称为 C 算术表达式</text>
+<text x="70" y="356" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P53</tspan>　C 语言规定了运算符的优先级和结合性</text>
+<text x="70" y="410" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P54</tspan>　运算的两个数中有一个数为 float 或 double 型，结果是 double 型</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】算术表达式的构成；运算符有优先级和结合性　　【难点】先乘除后加减、同级自左向右结合</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】整除 5/3＝1（不是 1.67）；只要有一个 float/double，结果就转成 double</text>
+</svg>

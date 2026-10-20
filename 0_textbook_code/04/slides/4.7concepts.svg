@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§4.7　用 switch 语句实现多分支选择结构</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §4.7，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="232" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P99</tspan>　if 语句只有两个分支可供选择，而实际问题中常常需要用到多分支的选择。</text>
+<text x="70" y="277" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P99</tspan>　但如果分支较多，则嵌套的 if 语句层数多，程序冗长而且可读性降低。C 语言提供 switch 语句直接处理多分支</text>
+<text x="126" y="307" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">选择。</text>
+<text x="70" y="352" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P99</tspan>　switch 语句是多分支选择语句。</text>
+<text x="70" y="397" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P99</tspan>　case 'A': printf("85~100\n");break; … default: printf("enter data error!\n");（例 4.6）</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】switch 多分支；case + break；default 兜底　　【难点】case 穿透（fall-through）的机制</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】每个 case 末尾漏 break 会穿透到下一个 case</text>
+</svg>

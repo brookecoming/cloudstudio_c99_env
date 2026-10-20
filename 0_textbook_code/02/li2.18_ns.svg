@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="345"
+     font-family="Microsoft YaHei, SimHei, sans-serif" font-size="15">
+  <!-- 例 2.18 求5! 的标准 N-S 盒图（当型 while 循环） -->
+  <!-- 外框 -->
+  <rect x="30" y="20" width="380" height="285" fill="none" stroke="black" stroke-width="2"/>
+
+  <!-- S1: t=1 -->
+  <rect x="30" y="20" width="380" height="45" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="220" y="47" text-anchor="middle">t = 1   （S1 累乘器初值）</text>
+
+  <!-- S2: i=2 -->
+  <rect x="30" y="65" width="380" height="45" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="220" y="92" text-anchor="middle">i = 2   （S2 乘数初值）</text>
+
+  <!-- while 当型循环区：条件占顶栏 + 左侧循环导轨 + 缩进循环体 -->
+  <!-- 条件顶栏 -->
+  <rect x="30" y="110" width="380" height="40" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="230" y="135" text-anchor="middle">当 i ≤ 5   （S5 循环条件）</text>
+  <!-- 左侧循环导轨（表示"满足条件就回到这里重复"） -->
+  <rect x="30" y="150" width="40" height="110" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="50" y="200" text-anchor="middle" font-size="20">&#8634;</text>
+  <!-- 循环体：先乘 -->
+  <rect x="70" y="150" width="340" height="55" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="240" y="182" text-anchor="middle">t = t * i   （S3）</text>
+  <!-- 循环体：再自增 -->
+  <rect x="70" y="205" width="340" height="55" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="240" y="237" text-anchor="middle">i = i + 1   （S4）</text>
+
+  <!-- 输出 t -->
+  <rect x="30" y="260" width="380" height="45" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="220" y="287" text-anchor="middle">输出 t   printf  （结果为 120）</text>
+
+  <!-- 图注 -->
+  <text x="220" y="325" text-anchor="middle" font-size="14">图：例 2.18 的 N-S 盒图（当型循环：先判断条件，真则重复循环体）</text>
+</svg>

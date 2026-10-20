@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.2　数据的表现形式及其运算（★★★硬核）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §3.2，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="234" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P39</tspan>　常量：在程序运行过程中，其值不能被改变的量</text>
+<text x="70" y="282" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P41</tspan>　变量：在程序运行过程中，其值可以改变的量</text>
+<text x="126" y="312" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">变量必须先定义，后使用</text>
+<text x="70" y="360" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P41</tspan>　常变量：用 const 定义的变量，在变量存在期间其值不能改变</text>
+<text x="70" y="408" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P42</tspan>　标识符：只能由字母、数字和下划线 3 种字符组成</text>
+<text x="126" y="438" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">且第一个字符必须为字母或下划线</text>
+<text x="70" y="486" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P42</tspan>　C 语言区分大小写：大写字母和小写字母是两个不同的字符</text>
+<text x="126" y="516" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">（如 sum 与 SUM 是两个不同的变量名）</text>
+<text x="70" y="564" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P43</tspan>　类型：所谓类型，就是对数据分配存储单元的安排</text>
+<text x="126" y="594" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">包括存储单元的长度（占多少字节）以及数据的存储形式</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】常量 / 变量 / 标识符 / 类型 是整节的词法地基　　【难点】类型决定占多少字节、怎么存</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】标识符首字符不能是数字；C 严格区分大小写（sum≠SUM）；变量必须先定义后使用</text>
+</svg>

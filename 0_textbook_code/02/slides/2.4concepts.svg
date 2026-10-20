@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.4　算法的特性</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.4，把下面这 5 条特性的【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P20</tspan>　（1）有穷性：一个算法应包含有限的操作步骤，而不能是无限的</text>
+<text x="70" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P20</tspan>　（2）确定性：算法中的每一个步骤都应当是确定的，而不应当是含糊的、模棱两可的</text>
+<text x="70" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P21</tspan>　（3）有零个或多个输入</text>
+<text x="70" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P21</tspan>　（4）有一个或多个输出：没有输出的算法是没有意义的</text>
+<text x="70" y="436" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P21</tspan>　（5）有效性：算法中的每一个步骤都应当能有效地执行，并得到确定的结果</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】5 特性：有穷、确定、输入、输出、有效　　【难点】“有穷”指合理范围之内</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】输入可以是 0 个，输出至少要有 1 个——“零个输出”的算法没有意义</text>
+</svg>

@@ -1,0 +1,14 @@
+@startuml
+title 例 4.7 选择结构盒图（switch 菜单分发 · 空 case 共用）
+start
+:ch = getchar();
+switch (ch?)
+case ('a' / 'A')
+  :调用 action1(a,b)，输出 x+y;
+case ('b' / 'B')
+  :调用 action2(a,b)，输出 x*y;
+case (default)
+  :putchar('\\a') 响铃警告;
+endswitch
+stop
+@enduml

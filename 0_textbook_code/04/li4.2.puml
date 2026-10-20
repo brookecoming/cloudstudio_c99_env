@@ -1,0 +1,13 @@
+@startuml
+title 例 4.2 选择结构盒图（两数由小到大）
+start
+:输入 a, b;
+if (a > b ?) then (是：需交换)
+  :t = a;
+  :a = b;
+  :b = t;
+else (否：不换)
+endif
+:输出 a, b;
+stop
+@enduml

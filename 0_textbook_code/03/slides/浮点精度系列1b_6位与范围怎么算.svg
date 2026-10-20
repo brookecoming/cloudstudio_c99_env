@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <marker id="arw" markerWidth="12" markerHeight="12" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="900" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="600" y="52" text-anchor="middle" font-size="37" font-weight="bold" fill="#1A202C">浮点精度①·补充："6 位"和"10³⁸"是怎么算出来的</text>
+
+  <!-- 工具箱：只先学一把换算尺 -->
+  <rect x="90" y="72" width="1020" height="86" rx="12" fill="#FEF9C3" stroke="#CA8A04" stroke-width="2.5"/>
+  <text x="600" y="104" text-anchor="middle" font-size="23" font-weight="bold" fill="#713F12">课本没写、但往下推全靠它——只先学"一把换算尺"</text>
+  <text x="600" y="140" text-anchor="middle" font-size="24" font-weight="bold" fill="#1A202C">2¹⁰ = 1024 ≈ 1000 = 10³　⟹　每 10 个二进制位 ≈ 3 个十进制位（1KB=1024B 就是它）</text>
+
+  <!-- 轨道 A：尾数 24 位 → 6 位有效数字 -->
+  <text x="90" y="196" font-size="25" font-weight="bold" fill="#C2410C">① 尾数 24 位　→　为什么"约 6 位有效数字"</text>
+  <rect x="90" y="208" width="340" height="150" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="260" y="250" text-anchor="middle" font-size="24" font-weight="bold" fill="#7C2D12">尾数占 24 位二进制</text>
+  <text x="260" y="292" text-anchor="middle" font-size="23" fill="#1A202C">每一位只有 0 / 1 两种</text>
+  <text x="260" y="330" text-anchor="middle" font-size="23" fill="#1A202C">⟹ 能摆 2²⁴ 个不同刻度</text>
+
+  <line x1="432" y1="283" x2="466" y2="283" stroke="#475569" stroke-width="3" marker-end="url(#arw)"/>
+  <rect x="470" y="208" width="340" height="150" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="640" y="250" text-anchor="middle" font-size="24" font-weight="bold" fill="#7C2D12">用那把尺拆开算</text>
+  <text x="640" y="292" text-anchor="middle" font-size="23" fill="#1A202C">2²⁴ = 2¹⁰ · 2¹⁰ · 2⁴</text>
+  <text x="640" y="330" text-anchor="middle" font-size="23" fill="#1A202C">≈ 10³ · 10³ · 16 = 1.6×10⁷</text>
+
+  <line x1="812" y1="283" x2="846" y2="283" stroke="#475569" stroke-width="3" marker-end="url(#arw)"/>
+  <rect x="850" y="208" width="260" height="150" rx="12" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="980" y="250" text-anchor="middle" font-size="23" font-weight="bold" fill="#7C2D12">约 1.6×10⁷ 个刻度</text>
+  <text x="980" y="292" text-anchor="middle" font-size="23" fill="#1A202C">十进制能记准 6~7 位</text>
+  <text x="980" y="330" text-anchor="middle" font-size="23" font-weight="bold" fill="#C2410C">课本保守取 → 6 位</text>
+
+  <!-- 轨道 B：指数 8 位 → 范围 10^38 -->
+  <text x="90" y="398" font-size="25" font-weight="bold" fill="#1E40AF">② 指数 8 位　→　为什么"范围到 10³⁸"</text>
+  <rect x="90" y="410" width="340" height="150" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5"/>
+  <text x="260" y="452" text-anchor="middle" font-size="24" font-weight="bold" fill="#1E3A8A">指数占 8 位（含符号）</text>
+  <text x="260" y="494" text-anchor="middle" font-size="23" fill="#1A202C">它管小数点能挪多远</text>
+  <text x="260" y="532" text-anchor="middle" font-size="23" fill="#1A202C">⟹ 最大档约 2¹²⁷</text>
+
+  <line x1="432" y1="485" x2="466" y2="485" stroke="#475569" stroke-width="3" marker-end="url(#arw)"/>
+  <rect x="470" y="410" width="340" height="150" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5"/>
+  <text x="640" y="452" text-anchor="middle" font-size="24" font-weight="bold" fill="#1E3A8A">同一个换算法</text>
+  <text x="640" y="494" text-anchor="middle" font-size="23" fill="#1A202C">2¹²⁷ = (2¹⁰)¹² · 2⁷</text>
+  <text x="640" y="532" text-anchor="middle" font-size="23" fill="#1A202C">≈ (10³)¹² · 128 = 1.28×10³⁸</text>
+
+  <line x1="812" y1="485" x2="846" y2="485" stroke="#475569" stroke-width="3" marker-end="url(#arw)"/>
+  <rect x="850" y="410" width="260" height="150" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="3"/>
+  <text x="980" y="452" text-anchor="middle" font-size="23" font-weight="bold" fill="#1E3A8A">量级一下到 10³⁸</text>
+  <text x="980" y="494" text-anchor="middle" font-size="23" fill="#1A202C">⟹ 能表这么大的数</text>
+  <text x="980" y="532" text-anchor="middle" font-size="23" font-weight="bold" fill="#1E40AF">课本确界 3.4×10³⁸</text>
+
+  <!-- 收口：这把尺怎么用 -->
+  <rect x="90" y="580" width="1020" height="88" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="600" y="616" text-anchor="middle" font-size="25" font-weight="bold" fill="#1A202C">把"二进制位数"换成"十进制"，就乘 0.3（正因 2¹⁰≈10³）：</text>
+  <text x="600" y="650" text-anchor="middle" font-size="23" fill="#1A202C">尾数 24×0.3≈7 位（含符号位则约 6~7，课本保守说 6）；指数看最大那个 2 的幂，换成 10 的幂就是范围。</text>
+
+  <!-- 验证 double：同一把尺全对得上 -->
+  <rect x="90" y="686" width="1020" height="150" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="600" y="722" text-anchor="middle" font-size="25" font-weight="bold" fill="#7C2D12">拿 double 验一遍——同一把尺，全对得上：</text>
+  <text x="600" y="760" text-anchor="middle" font-size="23" fill="#1A202C">尾数 53 位　→　2⁵³ ≈ 9×10¹⁵　→　约 15 位有效数字　✓</text>
+  <text x="600" y="796" text-anchor="middle" font-size="23" fill="#1A202C">指数 11 位　→　最大 2¹⁰²⁴ ≈ 10³⁰⁸　→　范围到 10³⁰⁸　✓</text>
+  <text x="600" y="828" text-anchor="middle" font-size="21" fill="#475569">所以表 3.4 里那些"6 / 15 位、10³⁸ / 10³⁰⁸"，都是这么"量"出来的，不是死记硬背。</text>
+</svg>

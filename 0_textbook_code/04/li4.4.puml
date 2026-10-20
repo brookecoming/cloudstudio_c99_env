@@ -1,0 +1,12 @@
+@startuml
+title 例 4.4 选择结构盒图（大写转小写 · 条件表达式）
+start
+:输入 ch;
+if (ch>='A' && ch<='Z' ?) then (是：大写)
+  :ch = ch + 32;
+else (否：保持原值)
+  :ch = ch;
+endif
+:输出 ch;
+stop
+@enduml

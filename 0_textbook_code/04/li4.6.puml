@@ -1,0 +1,19 @@
+@startuml
+title 例 4.6 选择结构盒图（switch 按等级输出分数段）
+start
+:输入 grade;
+:输出 Your score:;
+switch (grade?)
+case ('A')
+  :输出 85~100;
+case ('B')
+  :输出 70~84;
+case ('C')
+  :输出 60~69;
+case ('D')
+  :输出 <60;
+case (default)
+  :输出 enter data error!;
+endswitch
+stop
+@enduml

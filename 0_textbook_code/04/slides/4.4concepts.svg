@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§4.4　逻辑运算符和逻辑表达式</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §4.4，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="232" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P90</tspan>　有时要求判断的条件不是一个简单的条件，而是由几个给定简单条件组成的复合条件。</text>
+<text x="70" y="277" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P91</tspan>　用逻辑运算符将关系表达式或其他逻辑量连接起来的式子就是逻辑表达式。</text>
+<text x="70" y="322" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P91</tspan>　有 3 种逻辑运算符：与(AND)、或(OR)、非(NOT)。在 C 语言中用 &amp;&amp;、||、! 代替，见表 4.1。</text>
+<text x="70" y="367" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P91</tspan>　“&amp;&amp;”和“||”是双目(元)运算符，它要求有两个运算对象(操作数)；“!”是一目(元)运算符，只要求有一个运算对象。</text>
+<text x="70" y="412" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P92</tspan>　逻辑运算符的优先次序：!(非) → &amp;&amp;(与) → ||(或)。</text>
+<text x="70" y="457" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P93</tspan>　在逻辑表达式的求解中，并不是所有的逻辑运算符都被执行，只是在必须执行下一个逻辑运算符才能求出表达式的解</text>
+<text x="126" y="487" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">时，才执行该运算符。</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】&amp;&amp;、||、! 三种逻辑运算符；逻辑表达式值为 1/0　　【难点】短路求值：&amp;&amp; 前假则不算后、|| 前真则不算后</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】&amp;&amp; 别写成按位 &amp;；! 优先级最高；闰年式的括号不能省</text>
+</svg>

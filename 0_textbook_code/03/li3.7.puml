@@ -1,0 +1,15 @@
+@startuml
+title 例 3.7 顺序结构盒图（float 有效位数露馅）
+start
+:定义 float a;
+:a = 10000/3.0（浮点除法，存入单精度）;
+:printf("%f", a) → 输出 3333.333252;
+stop
+
+note right
+  float 约 6~7 位有效数字
+  整数 3333 已占 4 位，小数第 7 位起不可靠
+  换编译器末位不同（课本印 ...333）
+  想更准改 double（约 15 位）
+end note
+@enduml

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <marker id="arwD" markerWidth="14" markerHeight="14" refX="5" refY="10" orient="auto">
+      <path d="M0 0 L10 0 L5 10 z" fill="#B45309"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="900" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="600" y="48" text-anchor="middle" font-size="36" font-weight="bold" fill="#1A202C">浮点精度①·附：指数那 8 位，凭什么最大只到 127？</text>
+
+  <!-- A：先懂"指数=挪小数点" -->
+  <rect x="90" y="62" width="1020" height="116" rx="12" fill="#FEF9C3" stroke="#CA8A04" stroke-width="2.5"/>
+  <text x="600" y="94" text-anchor="middle" font-size="22" font-weight="bold" fill="#713F12">先懂一件事：所谓"指数"，就是——把小数点挪几位。往右挪数变大，往左挪数变小。</text>
+  <text x="600" y="128" text-anchor="middle" font-size="22" fill="#1A202C">你早见过：1.23 × 10³ = 1230，就是小数点往右挪了 3 位。</text>
+  <text x="600" y="162" text-anchor="middle" font-size="22" fill="#1A202C">浮点数同理，只把底数换成 2：乘 2 的 k 次方，就把二进制小数点挪 k 位。</text>
+
+  <!-- 设问 -->
+  <text x="600" y="210" text-anchor="middle" font-size="22" font-weight="bold" fill="#1E40AF">可这 8 位存出来全是非负数（0~255），负指数从哪来？—— 定个基准，存的数减掉它才是真指数：</text>
+
+  <!-- Bar1：内存存的数 -->
+  <text x="120" y="236" font-size="21" font-weight="bold" fill="#334155">内存里存的（8 位 → 0 ~ 255）</text>
+  <rect x="120" y="244" width="36" height="48" fill="#FCA5A5" stroke="#B91C1C" stroke-width="1.5"/>
+  <rect x="156" y="244" width="888" height="48" fill="#BBF7D0" stroke="#16A34A" stroke-width="1.5"/>
+  <rect x="1044" y="244" width="36" height="48" fill="#FCA5A5" stroke="#B91C1C" stroke-width="1.5"/>
+  <text x="138" y="274" text-anchor="middle" font-size="20" font-weight="bold" fill="#7F1D1D">0</text>
+  <text x="1062" y="274" text-anchor="middle" font-size="17" font-weight="bold" fill="#7F1D1D">255</text>
+  <text x="600" y="274" text-anchor="middle" font-size="22" font-weight="bold" fill="#14532D">1  ←  正常指数用的区间  →  254</text>
+  <text x="170" y="312" text-anchor="middle" font-size="20" fill="#1A202C">存 1</text>
+  <text x="600" y="312" text-anchor="middle" font-size="20" fill="#1A202C">存 127（基准）</text>
+  <text x="1030" y="312" text-anchor="middle" font-size="20" fill="#1A202C">存 254</text>
+
+  <!-- −127 连接器 -->
+  <line x1="170" y1="318" x2="170" y2="346" stroke="#B45309" stroke-width="3" marker-end="url(#arwD)"/>
+  <line x1="600" y1="318" x2="600" y2="346" stroke="#B45309" stroke-width="3" marker-end="url(#arwD)"/>
+  <line x1="1030" y1="318" x2="1030" y2="346" stroke="#B45309" stroke-width="3" marker-end="url(#arwD)"/>
+  <text x="380" y="340" text-anchor="middle" font-size="22" font-weight="bold" fill="#B45309">每个都 − 127</text>
+  <text x="835" y="340" text-anchor="middle" font-size="20" fill="#B45309">（这个 127 叫"偏移量 bias"）</text>
+
+  <!-- Bar2：真指数 -->
+  <text x="120" y="368" font-size="21" font-weight="bold" fill="#334155">真正的指数（小数点挪几位）</text>
+  <rect x="120" y="376" width="960" height="48" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+  <text x="170" y="408" text-anchor="middle" font-size="22" font-weight="bold" fill="#1E3A8A">−126</text>
+  <text x="600" y="408" text-anchor="middle" font-size="22" font-weight="bold" fill="#1E3A8A">0</text>
+  <text x="1030" y="408" text-anchor="middle" font-size="22" font-weight="bold" fill="#1E3A8A">+127</text>
+
+  <!-- 三个说明框 -->
+  <rect x="70" y="440" width="220" height="98" rx="10" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="180" y="472" text-anchor="middle" font-size="21" font-weight="bold" fill="#1A202C">存 1 → 真 −126</text>
+  <text x="180" y="502" text-anchor="middle" font-size="20" fill="#334155">小数点往左挪最多</text>
+  <text x="180" y="530" text-anchor="middle" font-size="20" fill="#334155">（表极小的数）</text>
+
+  <rect x="490" y="440" width="220" height="98" rx="10" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="600" y="472" text-anchor="middle" font-size="21" font-weight="bold" fill="#1A202C">存 127 → 真 0</text>
+  <text x="600" y="502" text-anchor="middle" font-size="20" fill="#334155">小数点不挪</text>
+  <text x="600" y="530" text-anchor="middle" font-size="20" fill="#334155">（就停在原样）</text>
+
+  <rect x="910" y="440" width="220" height="98" rx="10" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="1020" y="472" text-anchor="middle" font-size="21" font-weight="bold" fill="#1A202C">存 254 → 真 +127</text>
+  <text x="1020" y="502" text-anchor="middle" font-size="20" fill="#334155">小数点往右挪最多</text>
+  <text x="1020" y="530" text-anchor="middle" font-size="20" fill="#334155">（表极大的数）</text>
+
+  <!-- 结论 band -->
+  <rect x="90" y="556" width="1020" height="116" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="600" y="588" text-anchor="middle" font-size="23" font-weight="bold" fill="#7C2D12">所以最大正指数 = 254 − 127 = 127，小数点最多往右挪到 2 的 127 次方：</text>
+  <text x="600" y="622" text-anchor="middle" font-size="22" fill="#1A202C">往右 2¹²⁷ ≈ 1.7×10³⁸，尾数取满 ≈ 3.4×10³⁸ —— 这就是 float 上限；</text>
+  <text x="600" y="656" text-anchor="middle" font-size="22" fill="#1A202C">往左 2⁻¹²⁶ ≈ 1.2×10⁻³⁸ —— 这就是 float 下限。装得下极大、也装得下极小。</text>
+
+  <!-- footer 对接口径 -->
+  <rect x="90" y="690" width="1020" height="96" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="600" y="722" text-anchor="middle" font-size="21" fill="#1A202C">课本只直接给了范围 ±3.4×10³⁸；这一页补的是"127 从哪来"——现代机器通用的 IEEE 754 规矩。</text>
+  <text x="600" y="758" text-anchor="middle" font-size="21" fill="#1A202C">（课本说这 8 位"含指数的符号"——机器不单独留符号位，而用"减基准 127"做出正负，效果一样：能大能小。）</text>
+</svg>

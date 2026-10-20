@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§4.5　条件运算符和条件表达式</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §4.5，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="232" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P94</tspan>　有一种 if 语句，当被判别的表达式的值为“真”或“假”时，都执行一个赋值语句且向同一个变量赋值。</text>
+<text x="70" y="277" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P94</tspan>　赋值号右侧的“(a&gt;b)? a:b”是一个“条件表达式”。“?”是条件运算符。</text>
+<text x="70" y="322" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P94</tspan>　条件运算符由两个符号(? 和:)组成，必须一起使用。要求有 3 个操作对象，称为三目(元)运算符，它是 C 语言中</text>
+<text x="126" y="352" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#E2E8F0">唯一的一个三目运算符。</text>
+<text x="70" y="397" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P94</tspan>　条件表达式的一般形式为：表达式1 ? 表达式2 : 表达式3</text>
+<text x="70" y="442" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P96</tspan>　ch=(ch&gt;='A' &amp;&amp; ch&lt;='Z') ? (ch+32) : ch;（例 4.4）</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】条件表达式 表达式1?表达式2:表达式3；唯一三目运算符　　【难点】?: 与关系/算术运算符结合时的括号</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】32 是大小写字母的 ASCII 差；?: 优先级低于关系/算术运算符</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.2　什么是算法</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.2，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P16</tspan>　广义地说，为解决一个问题而采取的方法和步骤，就称为“算法”</text>
+<text x="70" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P16</tspan>　对同一个问题，可以有不同的解题方法和步骤</text>
+<text x="70" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P16</tspan>　本书所关心的当然只限于计算机算法，即计算机能执行的算法</text>
+<text x="70" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P16</tspan>　计算机算法可分为两大类别：数值运算算法和非数值运算算法</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】算法＝解决问题的方法和步骤　　【难点】本书只限“计算机能执行的”算法</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】同一个问题可以有多种算法——“算法是唯一的”是错的</text>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920" viewBox="0 0 1200 920" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <defs>
+    <marker id="arrDown" markerWidth="10" markerHeight="10" refX="5" refY="6" orient="auto">
+      <path d="M1,1 L9,1 L5,8 Z" fill="#2B6CB0"/>
+    </marker>
+    <marker id="arrRight" markerWidth="10" markerHeight="10" refX="7" refY="4" orient="auto">
+      <path d="M1,1 L1,7 L8,4 Z" fill="#718096"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect x="0" y="0" width="1200" height="920" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="600" y="52" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C">第 3 章 主线地图 · 一条线读懂一个顺序程序</text>
+  <text x="600" y="88" text-anchor="middle" font-size="18" fill="#2D3748">全章就盯同一个例子（例3.1 华氏温度转摄氏）——五步走完，它的每一行你都能说出道理</text>
+
+  <!-- 列小标题 -->
+  <text x="230" y="118" text-anchor="middle" font-size="16" font-weight="bold" fill="#2B6CB0">这一步做什么（对应课本）</text>
+  <text x="805" y="118" text-anchor="middle" font-size="16" font-weight="bold" fill="#1A365D">这一步要回答的问题</text>
+
+  <!-- 行模板：5 行，每行 top = 132 + i*138，块高 108，中心 = top+54 -->
+  <!-- ===== 第①行 ===== -->
+  <rect x="40" y="132" width="380" height="108" rx="14" fill="#2B6CB0"/>
+  <circle cx="92" cy="186" r="27" fill="#FFFFFF"/>
+  <text x="92" y="196" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A365D">1</text>
+  <text x="138" y="176" font-size="22" font-weight="bold" fill="#FFFFFF">看懂一个完整程序</text>
+  <text x="138" y="210" font-size="16" fill="#DCE6F2">§3.1 顺序结构举例</text>
+  <line x1="420" y1="186" x2="450" y2="186" stroke="#718096" stroke-width="2" marker-end="url(#arrRight)"/>
+  <rect x="452" y="132" width="708" height="108" rx="14" fill="#E2E8F0"/>
+  <text x="480" y="176" font-size="19" fill="#1A365D">一个 C 程序由哪几行组成？</text>
+  <text x="480" y="208" font-size="19" fill="#1A365D">它是怎么从上到下跑起来的？</text>
+  <line x1="230" y1="240" x2="230" y2="268" stroke="#2B6CB0" stroke-width="3" marker-end="url(#arrDown)"/>
+
+  <!-- ===== 第②行 ===== -->
+  <rect x="40" y="270" width="380" height="108" rx="14" fill="#2C5282"/>
+  <circle cx="92" cy="324" r="27" fill="#FFFFFF"/>
+  <text x="92" y="334" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A365D">2</text>
+  <text x="138" y="314" font-size="22" font-weight="bold" fill="#FFFFFF">给数据选对类型</text>
+  <text x="138" y="348" font-size="16" fill="#DCE6F2">§3.2 数据类型</text>
+  <line x1="420" y1="324" x2="450" y2="324" stroke="#718096" stroke-width="2" marker-end="url(#arrRight)"/>
+  <rect x="452" y="270" width="708" height="108" rx="14" fill="#E2E8F0"/>
+  <text x="480" y="314" font-size="19" fill="#1A365D">整数、小数、字符——</text>
+  <text x="480" y="346" font-size="19" fill="#1A365D">分别要装进哪种“盒子”？</text>
+  <line x1="230" y1="378" x2="230" y2="406" stroke="#2B6CB0" stroke-width="3" marker-end="url(#arrDown)"/>
+
+  <!-- ===== 第③行 ===== -->
+  <rect x="40" y="408" width="380" height="108" rx="14" fill="#2B6CB0"/>
+  <circle cx="92" cy="462" r="27" fill="#FFFFFF"/>
+  <text x="92" y="472" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A365D">3</text>
+  <text x="138" y="452" font-size="22" font-weight="bold" fill="#FFFFFF">写对计算表达式</text>
+  <text x="138" y="486" font-size="16" fill="#DCE6F2">§3.3 运算符与表达式</text>
+  <line x1="420" y1="462" x2="450" y2="462" stroke="#718096" stroke-width="2" marker-end="url(#arrRight)"/>
+  <rect x="452" y="408" width="708" height="108" rx="14" fill="#E2E8F0"/>
+  <text x="480" y="452" font-size="19" fill="#1A365D">一个算式先算什么、后算什么？</text>
+  <text x="480" y="484" font-size="19" fill="#1A365D">两个整数相除，小数为什么没了？</text>
+  <line x1="230" y1="516" x2="230" y2="544" stroke="#2B6CB0" stroke-width="3" marker-end="url(#arrDown)"/>
+
+  <!-- ===== 第④行 ===== -->
+  <rect x="40" y="546" width="380" height="108" rx="14" fill="#2C5282"/>
+  <circle cx="92" cy="600" r="27" fill="#FFFFFF"/>
+  <text x="92" y="610" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A365D">4</text>
+  <text x="138" y="590" font-size="22" font-weight="bold" fill="#FFFFFF">理解赋值语句</text>
+  <text x="138" y="624" font-size="16" fill="#DCE6F2">§3.4 赋值</text>
+  <line x1="420" y1="600" x2="450" y2="600" stroke="#718096" stroke-width="2" marker-end="url(#arrRight)"/>
+  <rect x="452" y="546" width="708" height="108" rx="14" fill="#E2E8F0"/>
+  <text x="480" y="590" font-size="19" fill="#1A365D">等号 = 跟数学里的等号，</text>
+  <text x="480" y="622" font-size="19" fill="#1A365D">是一回事吗？</text>
+  <line x1="230" y1="654" x2="230" y2="682" stroke="#2B6CB0" stroke-width="3" marker-end="url(#arrDown)"/>
+
+  <!-- ===== 第⑤行 ===== -->
+  <rect x="40" y="684" width="380" height="108" rx="14" fill="#1A365D"/>
+  <circle cx="92" cy="738" r="27" fill="#FFFFFF"/>
+  <text x="92" y="748" text-anchor="middle" font-size="28" font-weight="bold" fill="#1A365D">5</text>
+  <text x="138" y="728" font-size="22" font-weight="bold" fill="#FFFFFF">实现数据输入输出</text>
+  <text x="138" y="762" font-size="16" fill="#C7D2E0">§3.5 printf / scanf</text>
+  <line x1="420" y1="738" x2="450" y2="738" stroke="#718096" stroke-width="2" marker-end="url(#arrRight)"/>
+  <rect x="452" y="684" width="708" height="108" rx="14" fill="#E2E8F0"/>
+  <text x="480" y="728" font-size="19" fill="#1A365D">数别写死在代码里——</text>
+  <text x="480" y="760" font-size="19" fill="#1A365D">怎么从键盘读入、把结果打印出来？</text>
+
+  <!-- 底部通栏：迷路指南 -->
+  <rect x="40" y="812" width="1120" height="76" rx="14" fill="#FFF3E0" stroke="#ED8936" stroke-width="2"/>
+  <text x="600" y="846" text-anchor="middle" font-size="19" font-weight="bold" fill="#7B341E">中途迷路了就回这张图问自己一句：</text>
+  <text x="600" y="874" text-anchor="middle" font-size="19" fill="#7B341E">我现在走到第 ① ~ ⑤ 哪一步？这一步对应课本的哪一节？</text>
+</svg>

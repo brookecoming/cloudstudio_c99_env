@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.3　简单的算法举例</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.3，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P17</tspan>　【例 2.1】求 1×2×3×4×5 —— 变量 t 为被乘数、变量 i 为乘数</text>
+<text x="70" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P17</tspan>　S1～S5：1⇒i；i⇒t；i＋1⇒i；t×i⇒t；如果 i 不大于 5，返回重新执行 S3，</text>
+<text x="120" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#E2E8F0">否则算法结束（最后得到 t 的值就是 5! 的值）</text>
+<text x="70" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P17</tspan>　S 是 Step（步）的缩写，这是写算法的习惯用法</text>
+<text x="70" y="436" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P17</tspan>　用这种方法表示的算法具有“一般性、通用性和灵活性”；S3～S5 组成一个循环</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】累乘变量是 t，循环靠 S3～S5 反复执行　　【难点】“返回 S3”就是重复</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】“S 是 Step 的缩写”——写算法惯用 S 记步骤，别当成变量</text>
+</svg>

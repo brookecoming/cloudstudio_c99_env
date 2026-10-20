@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.1　程序＝算法＋数据结构</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.1，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P15</tspan>　本节标题：程序＝算法＋数据结构</text>
+<text x="70" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P15</tspan>　著名计算机科学家沃思（Nikiklaus Wirth）提出：算法＋数据结构＝程序</text>
+<text x="70" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P15</tspan>　数据结构（data structure）：对数据的描述，即数据的类型和数据的组织形式</text>
+<text x="70" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P15</tspan>　算法（algorithm）：对操作的描述，即要求计算机进行操作的步骤</text>
+<text x="70" y="436" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P15</tspan>　在这 4 个方面中，算法是灵魂，数据结构是加工对象，语言是工具</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】算法＋数据结构＝程序；算法是灵魂　　【难点】数据结构＝类型＋组织形式，算法＝操作步骤</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】“程序＝算法＋数据结构”是沃思提出的公式，别把顺序记反</text>
+</svg>

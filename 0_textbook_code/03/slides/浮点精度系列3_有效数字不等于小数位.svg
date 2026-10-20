@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <rect x="0" y="0" width="1200" height="900" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="600" y="58" text-anchor="middle" font-size="40" font-weight="bold" fill="#1A202C">有效数字 ≠ 小数点后面的位数</text>
+
+  <!-- 导引带 -->
+  <rect x="110" y="80" width="980" height="66" rx="14" fill="#FEF2F2" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="600" y="108" text-anchor="middle" font-size="24" font-weight="bold" fill="#991B1B">从左边第一个不是 0 的数字起，往后一位一位数——整数位、小数位一起算。</text>
+  <text x="600" y="136" text-anchor="middle" font-size="23" fill="#1A202C">橙色 = 有效数字；灰色 = 不是有效数字（小数点本身不占位）。</text>
+
+  <!-- 卡片 A：123.456 -->
+  <rect x="110" y="168" width="980" height="150" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="150" y="240" font-size="52" font-weight="bold" font-family="Consolas, monospace"><tspan fill="#C2410C">123</tspan><tspan fill="#94A3B8">.</tspan><tspan fill="#C2410C">456</tspan></text>
+  <text x="470" y="222" font-size="30" font-weight="bold" fill="#C2410C">= 6 位有效数字</text>
+  <text x="470" y="262" font-size="23" fill="#334155">整数 3 位 + 小数 3 位，一起数；小数点不占位。</text>
+
+  <!-- 卡片 B：0.000123 -->
+  <rect x="110" y="332" width="980" height="150" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="150" y="404" font-size="52" font-weight="bold" font-family="Consolas, monospace"><tspan fill="#94A3B8">0.000</tspan><tspan fill="#C2410C">123</tspan></text>
+  <text x="470" y="386" font-size="30" font-weight="bold" fill="#C2410C">= 3 位有效数字</text>
+  <text x="470" y="426" font-size="23" fill="#334155">打头的 0 只是占位、不算；从第一个非零的 1 起才数。</text>
+
+  <!-- 卡片 C：3333.333... float 6 位 -->
+  <rect x="110" y="496" width="980" height="150" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="150" y="568" font-size="52" font-weight="bold" font-family="Consolas, monospace"><tspan fill="#C2410C">3333.33</tspan><tspan fill="#94A3B8">3…</tspan></text>
+  <text x="470" y="550" font-size="28" font-weight="bold" fill="#C2410C">float 只保 6 位有效</text>
+  <text x="470" y="590" font-size="22" fill="#334155">第 7 位起是机器凑的，不同编译器还凑得不一样。</text>
+
+  <!-- 底部对比框：显示宽度 vs 精度 -->
+  <rect x="110" y="668" width="980" height="128" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
+  <text x="140" y="704" font-size="26" font-weight="bold" fill="#1E40AF">最容易混的一点：%f 的"小数位数" ≠ 精度</text>
+  <text x="140" y="742" font-size="24" fill="#1A202C">printf("%f") 默认打 6 位小数，那是"显示格式"要几位小数，不是"精度只有 6 位小数"。</text>
+  <text x="140" y="778" font-size="24" fill="#1A202C">精度看的是"有效数字"（float 6 位、double 15 位），跟小数点摆在哪一位无关。</text>
+
+  <!-- 一句话收 -->
+  <text x="600" y="838" text-anchor="middle" font-size="25" font-weight="bold" fill="#1A202C">一句话：有效数字 = 从第一个非零数字起往后数的总位数，整数位和小数位一起算。</text>
+</svg>

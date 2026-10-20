@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320">
+<rect width="720" height="320" fill="#FFFFFF"/>
+<text x="60" y="188" font-family="Microsoft YaHei" font-style="italic" font-size="52" fill="#1A202C">y</text>
+<text x="108" y="188" font-family="Microsoft YaHei" font-size="48" fill="#1A202C">=</text>
+<path d="M170 60 Q150 60 150 90 L150 140 Q150 160 128 160 Q150 160 150 180 L150 230 Q150 260 170 260" fill="none" stroke="#1A202C" stroke-width="4"/>
+<text x="210" y="96" font-family="Microsoft YaHei" font-size="42" fill="#1A202C">-1</text>
+<text x="330" y="96" font-family="Microsoft YaHei" font-size="34" fill="#2D3748">(x &lt; 0)</text>
+<text x="210" y="176" font-family="Microsoft YaHei" font-size="42" fill="#1A202C">0</text>
+<text x="330" y="176" font-family="Microsoft YaHei" font-size="34" fill="#2D3748">(x = 0)</text>
+<text x="210" y="256" font-family="Microsoft YaHei" font-size="42" fill="#1A202C">1</text>
+<text x="330" y="256" font-family="Microsoft YaHei" font-size="34" fill="#2D3748">(x &gt; 0)</text>
+</svg>

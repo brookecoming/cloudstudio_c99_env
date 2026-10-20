@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§4.3　关系运算符和关系表达式</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §4.3，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="232" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P89</tspan>　在 C 语言中，比较符（或称比较运算符）称为关系运算符。</text>
+<text x="70" y="277" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P89</tspan>　所谓“关系运算”就是“比较运算”，将两个数值进行比较，判断其比较的结果是否符合给定的条件。</text>
+<text x="70" y="322" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P90</tspan>　C 语言提供 6 种关系运算符：&lt; &lt;= &gt; &gt;= == !=</text>
+<text x="70" y="367" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P90</tspan>　前 4 种关系运算符的优先级别相同，后 2 种也相同。前 4 种高于后 2 种。</text>
+<text x="70" y="412" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P90</tspan>　用关系运算符将两个数值或数值表达式连接起来的式子，称为关系表达式。</text>
+<text x="70" y="457" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P90</tspan>　关系表达式的值是一个逻辑值，即“真”或“假”。在 C 的逻辑运算中，以“1”代表“真”，以“0”代表“假”。</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】6 种关系运算符；关系表达式的值是 1 / 0　　【难点】优先级：算术 &gt; 关系 &gt; 赋值</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】判等用 ==（两个等号），单个 = 是赋值；值是 1/0 不是 true/false</text>
+</svg>

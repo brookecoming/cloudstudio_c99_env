@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.5　数据的输入输出（★★★硬核）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §3.5，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="248" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P66</tspan>　C 语言本身不提供输入输出语句，输入和输出操作是由 C 标准函数库中的函数来实现的</text>
+<text x="70" y="302" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P67</tspan>　printf（格式控制，输出表列）</text>
+<text x="70" y="356" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P74</tspan>　scanf（格式控制，地址表列）——"地址表列"可以是变量的地址</text>
+<text x="70" y="410" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P75</tspan>　使用 scanf 应注意：scanf("%f%f%f",a,b,c); 是不对的，应改为 scanf("%f%f%f",&amp;a,&amp;b,&amp;c);</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】printf/scanf 是库函数不是关键字，须 #include &lt;stdio.h&gt;　　【难点】scanf 的地址表列要传变量地址</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】scanf 漏写 &amp; 取地址是初学头号致命错误；格式串里的普通字符要原样输入</text>
+</svg>

@@ -1,0 +1,17 @@
+@startuml
+title 例 3.10 顺序结构盒图（读入大写 → 加32 → 输出小写）
+start
+:定义 char c1, c2;
+:c1 = getchar()（键盘读入一个大写字母）;
+:c2 = c1 + 32（求对应小写字母的 ASCII 码）;
+:putchar(c2) 输出小写字符;
+:putchar('\n') 换行;
+stop
+
+note right
+  小写 ASCII = 大写 ASCII + 32
+  相比例3.3：c1='A' 换成 c1=getchar()
+  从"只会 A"变成"通吃所有大写"
+  未做输入校验（if 留给下一章）
+end note
+@enduml

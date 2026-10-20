@@ -1,0 +1,17 @@
+@startuml
+title 例 3.4 顺序结构盒图（海伦公式求三角形面积）
+start
+:定义 double a, b, c, s, area;
+:a = 3.67, b = 5.43, c = 6.21;
+:s = (a+b+c)/2;
+:area = sqrt(s*(s-a)*(s-b)*(s-c));
+:printf 输出 a, b, c（用制表符对齐）;
+:printf 输出 area;
+stop
+
+note right
+  调 sqrt 必须 #include <math.h>
+  C 里乘号 * 一个都不能省
+  制表符 \t = 跳到下一个 Tab（8 列）对齐
+end note
+@enduml

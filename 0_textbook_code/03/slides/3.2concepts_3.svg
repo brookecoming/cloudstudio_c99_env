@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.2　数据的表现形式及其运算（3/3　浮点型 · 常量类型）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="182" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §3.2.5、§3.2.6，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="228" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P49</tspan>　在 C 语言中，实数是以指数形式存放在存储单元中的</text>
+<text x="70" y="278" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P50</tspan>　float 型数据只能保证 6 位有效数字，double 型数据能保证 15 位有效数字</text>
+<text x="70" y="328" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P50</tspan>　进行浮点数的算术运算时，将 float 型数据都自动转换为 double 型，然后进行运算</text>
+<text x="70" y="378" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P50</tspan>　不仅变量有类型，常量也有类型；从常量的表示形式即可以判定其类型</text>
+<text x="70" y="428" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P51</tspan>　不带小数点的数值是整型常量</text>
+<text x="70" y="478" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P51</tspan>　C 程序中的实型常量都作为双精度浮点型常量处理</text>
+<text x="120" y="508" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#E2E8F0">P51　后面加字母 F 或 f 表示是 float 型常量，后面加大写或小写的 L 则指定常量是 long double 型</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】实数以指数形式存放；float 6 位、double 15 位有效数字　　【难点】运算时 float 自动转 double 参与计算</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】实型常量默认按 double；只有带小数点才是实型常量——加 f/F 才是 float、加 L 才是 long double</text>
+</svg>

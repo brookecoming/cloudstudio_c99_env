@@ -1,0 +1,17 @@
+@startuml
+title 例 3.8 顺序结构盒图（putchar 逐个输出 BOY 再换行）
+start
+:定义 char a='B', b='O', c='Y';
+:putchar(a) → 输出 B;
+:putchar(b) → 输出 O;
+:putchar(c) → 输出 Y;
+:putchar('\n') → 输出换行符;
+stop
+
+note right
+  putchar 一次只输出一个字符
+  参数可为字符或整型（66 即 'B'）
+  也能输出控制/转义字符（\n, \101）
+  不自动加空格，故连排成 BOY
+end note
+@enduml

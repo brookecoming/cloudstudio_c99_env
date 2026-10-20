@@ -1,0 +1,19 @@
+@startuml
+title 例 4.3 选择结构盒图（三数由小到大）
+start
+:输入 a, b, c;
+if (a > b ?) then (是：换 a,b)
+  :t=a; a=b; b=t;
+else (否)
+endif
+if (a > c ?) then (是：换 a,c)
+  :t=a; a=c; c=t;
+else (否)
+endif
+if (b > c ?) then (是：换 b,c)
+  :t=b; b=c; c=t;
+else (否)
+endif
+:输出 a, b, c;
+stop
+@enduml

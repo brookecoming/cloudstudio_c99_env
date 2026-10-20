@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.2　数据的表现形式及其运算（2/3　整型 · 字符型）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="182" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §3.2.3、§3.2.4，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="228" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P44</tspan>　整型数据在内存中用整数的补码形式存放；最左面一位表示符号，为 0 正、为 1 负</text>
+<text x="70" y="278" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P44</tspan>　早期编译器给整型变量分配 2 字节，64 位系统分配 4 字节</text>
+<text x="120" y="308" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#E2E8F0">P45　C 标准没有具体规定各类型占用存储单元的长度，由编译系统自行决定</text>
+<text x="70" y="358" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P46</tspan>　无符号型变量不能存放负数，只有整型（含字符型）可加 signed / unsigned 修饰符</text>
+<text x="70" y="408" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P47</tspan>　由于字符是按其代码（整数）形式存储的，C 把字符型数据作为整数类型的一种</text>
+<text x="70" y="458" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P48</tspan>　字符 '1' 和整数 1 是不同的概念：字符 '1' 以 ASCII 码存储占 1 字节，整数 1 以补码存储占 2 或 4 字节</text>
+<text x="70" y="524" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P48</tspan>　字符变量实质上是一个字节的整型变量，可用 %d 输出其 ASCII 码、用 %c 输出字符</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】整型按补码存放；字符按 ASCII（整数）存储　　【难点】int 占几字节由编译器定；字符型是整数的一种</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】字符 '1' ≠ 整数 1：前者存 49 占 1 字节、后者存 1 占 2/4 字节——本章第一大坑</text>
+</svg>

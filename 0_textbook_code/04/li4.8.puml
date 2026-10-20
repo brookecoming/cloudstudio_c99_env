@@ -1,0 +1,24 @@
+@startuml
+title 例 4.8 选择结构盒图（闰年 · 三层嵌套 if + 标志变量）
+start
+:输入 year;
+if (year%4==0 ?) then (是)
+  if (year%100==0 ?) then (是)
+    if (year%400==0 ?) then (是)
+      :leap = 1;
+    else (否)
+      :leap = 0;
+    endif
+  else (否)
+    :leap = 1;
+  endif
+else (否)
+  :leap = 0;
+endif
+if (leap ?) then (非0：闰)
+  :输出 year is a leap year.;
+else (0：非闰)
+  :输出 year is not a leap year.;
+endif
+stop
+@enduml

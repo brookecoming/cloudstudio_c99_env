@@ -1,9 +1,30 @@
-# C 语言练习环境(C99 / C11 / C17 / C23 通用)
+# C 语言练习环境（三环境通用版）
 
-> 一个开箱即用的 C 语言在线练习与调试环境,配套谭浩强《C 程序设计》学习使用。
-> 无需在自己电脑上安装任何软件,用浏览器打开就能写代码、编译、断点调试。
+> 一个开箱即用的 C 语言练习与调试环境，配套谭浩强《C 程序设计》学习使用。
+> 支持 **Cloud Studio 云端 / VSCode 本地 / CLion 本地** 三种开发环境，选一种你喜欢的即可。
+>
+> 1. **打开项目时请选择 CMake 项目**
+> 2. 教学时主要使用：  
+>    - 绿色 Run 按钮运行
+>    - 锤子 Build 按钮构建
+>    - 小虫子 Debug 按钮调试
+>
+> 这样最适合教学，也最不容易把学生卡在环境问题上。
 
 ---
+
+## 🚀 我该用哪个环境？
+
+| 你的情况 | 推荐环境 | 快速开始 |
+|---------|---------|---------|
+| 🌐 不想装软件 / 多设备切换 | **Cloud Studio（腾讯云）** | [→ 跳到第二章](#二快速开始怎么打开这个环境) |
+| 💻 习惯本地开发 / 已装 VSCode | **本地 VSCode** | [→ 跳到第二章](#二快速开始怎么打开这个环境) |
+| 🔧 用 JetBrains 全家桶 / CLion | **本地 CLion** | [→ 看 CLion_SETUP.md](CLion_SETUP.md) |
+
+**三种环境操作基本一样**：代码通用、编译标准一致（`-std=gnu17`）、都能断点调试。详细对照见 [ENVIRONMENT.md](ENVIRONMENT.md)。
+
+---
+
 
 ## 一、这个环境有多"通用"?先搞懂 C99/C11/C17/C23
 
@@ -55,6 +76,9 @@ C 语言标准也是这个道理:
 
 ---
 
+
+> **注意**：本节适用于 **Cloud Studio / VSCode**。CLion 用户请看 [CLion_SETUP.md](CLion_SETUP.md)。
+
 ## 二、快速开始:怎么打开这个环境?
 
 1. 登录 [Cloud Studio](https://cloudstudio.net)。
@@ -95,6 +119,8 @@ make clean  # 清理,删掉生成的 main
 gcc -std=gnu17 -Wall -g main.c -o main
 ./main
 ```
+
+> 📖 **CLion 用户**:想搞懂点「▶ 运行」时那条 `cmake --build ... --target ... -j` 命令**由谁干活、每个参数什么意思、真实的 gcc 编译/链接命令长什么样**,详见 [构建命令详解.md](构建命令详解.md)。
 
 ### 附:导入仓库后,一键装扩展、调出运行箭头 ▷
 
@@ -160,6 +186,7 @@ cloudstudio_c99_env/
 │   └── README.md      #   Markdown 渲染 / Marp / pptx转PDF 说明
 ├── main.c            # 入门示例源码,含 C99 特性测试
 ├── Makefile          # 终端 make 编译脚本
+├── 构建命令详解.md    # 【CLion】点运行的构建命令逐段拆解 + 真实 gcc 命令
 ├── .gitignore        # 忽略编译产物
 ├── .gitattributes    # 统一 LF 换行符(保障 Linux 下 make 正常)
 ├── AGENTS.md         # AI 助教身份卡(给在线 AI 设定角色)

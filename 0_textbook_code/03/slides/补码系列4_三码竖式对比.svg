@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <rect width="1200" height="900" fill="#ffffff"/>
+  <text x="600" y="56" text-anchor="middle" font-size="38" font-weight="bold" fill="#1A202C">为什么硬件只用补码：5 + (−5) 逐位加，一眼看出对错</text>
+  <text x="600" y="98" text-anchor="middle" font-size="26" fill="#2D3748">整字连符号位一起送进加法器 · 为看清每一位，这里用 8 位演示（与 16 位道理完全相同）</text>
+  <rect x="24" y="140" width="376" height="360" rx="14" fill="#FFF5F5" stroke="#EF4444" stroke-width="3"/>
+  <text x="228" y="184" text-anchor="middle" font-size="32" font-weight="bold" fill="#C53030">原码 ❌ 错</text>
+  <rect x="70" y="204" width="36" height="46" rx="6" fill="#C6F6D5" stroke="#22C55E" stroke-width="3"/>
+  <text x="88" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="110" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="128" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="150" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="168" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="190" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="208" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="230" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="248" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="270" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="288" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="310" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="328" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="350" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="368" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <text x="46" y="300" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">+</text>
+  <rect x="70" y="256" width="36" height="46" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="3"/>
+  <text x="88" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="110" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="128" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="150" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="168" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="190" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="208" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="230" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="248" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="270" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="288" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="310" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="328" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="350" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="368" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <line x1="64" y1="326" x2="386" y2="326" stroke="#2D3748" stroke-width="3"/>
+  <text x="46" y="392" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">=</text>
+  <rect x="70" y="348" width="36" height="46" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="3"/>
+  <text x="88" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="110" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="128" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="150" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="168" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="190" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="208" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="230" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="248" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="270" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="288" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="310" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="328" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="350" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="368" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <text x="228" y="462" text-anchor="middle" font-size="30" font-weight="bold" fill="#C53030">读出来 −10</text>
+  <rect x="412" y="140" width="376" height="360" rx="14" fill="#FFFAF0" stroke="#DD6B20" stroke-width="3"/>
+  <text x="616" y="184" text-anchor="middle" font-size="32" font-weight="bold" fill="#C05621">反码 ⚠ 别扭</text>
+  <rect x="458" y="204" width="36" height="46" rx="6" fill="#C6F6D5" stroke="#22C55E" stroke-width="3"/>
+  <text x="476" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="498" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="516" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="538" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="556" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="578" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="596" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="618" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="636" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="658" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="676" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="698" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="716" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="738" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="756" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <text x="434" y="300" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">+</text>
+  <rect x="458" y="256" width="36" height="46" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="3"/>
+  <text x="476" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="498" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="516" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="538" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="556" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="578" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="596" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="618" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="636" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="658" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="676" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="698" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="716" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="738" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="756" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <line x1="452" y1="326" x2="774" y2="326" stroke="#2D3748" stroke-width="3"/>
+  <text x="434" y="392" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">=</text>
+  <rect x="458" y="348" width="36" height="46" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="3"/>
+  <text x="476" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="498" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="516" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="538" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="556" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="578" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="596" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="618" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="636" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="658" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="676" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="698" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="716" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="738" y="348" width="36" height="46" rx="6" fill="#FFEDD5" stroke="#EA580C" stroke-width="3"/>
+  <text x="756" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <text x="616" y="462" text-anchor="middle" font-size="30" font-weight="bold" fill="#C05621">读出来 −0</text>
+  <rect x="800" y="140" width="376" height="360" rx="14" fill="#F0FFF4" stroke="#22C55E" stroke-width="3"/>
+  <text x="1004" y="184" text-anchor="middle" font-size="32" font-weight="bold" fill="#276749">补码 ✔ 对</text>
+  <rect x="846" y="204" width="36" height="46" rx="6" fill="#C6F6D5" stroke="#22C55E" stroke-width="3"/>
+  <text x="864" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="886" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="904" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="926" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="944" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="966" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="984" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1006" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1024" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1046" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1064" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="1086" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1104" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1126" y="204" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1144" y="237" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <text x="822" y="300" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">+</text>
+  <rect x="846" y="256" width="36" height="46" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="3"/>
+  <text x="864" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="886" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="904" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="926" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="944" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="966" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="984" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="1006" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1024" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="1046" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1064" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1086" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1104" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <rect x="1126" y="256" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1144" y="289" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">1</text>
+  <line x1="840" y1="326" x2="1162" y2="326" stroke="#2D3748" stroke-width="3"/>
+  <text x="822" y="392" text-anchor="middle" font-size="30" font-weight="bold" fill="#2D3748" font-family="Consolas, monospace">=</text>
+  <rect x="806" y="348" width="36" height="46" rx="6" fill="none" stroke="#EA580C" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="824" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#EA580C" font-family="Consolas, monospace">1</text>
+  <text x="824" y="424" text-anchor="middle" font-size="24" fill="#EA580C">丢弃</text>
+  <rect x="846" y="348" width="36" height="46" rx="6" fill="#C6F6D5" stroke="#22C55E" stroke-width="3"/>
+  <text x="864" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="886" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="904" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="926" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="944" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="966" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="984" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1006" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1024" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1046" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1064" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1086" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1104" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <rect x="1126" y="348" width="36" height="46" rx="6" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="1144" y="381" text-anchor="middle" font-size="30" font-weight="bold" fill="#1A202C" font-family="Consolas, monospace">0</text>
+  <text x="1004" y="462" text-anchor="middle" font-size="30" font-weight="bold" fill="#276749">读出来 0</text>
+  <rect x="30" y="524" width="1140" height="150" rx="14" fill="#EBF8FF" stroke="#38BDF8" stroke-width="3"/>
+  <text x="600" y="580" text-anchor="middle" font-size="30" font-weight="bold" fill="#2C5282">同样是整字逐位相加：原码得 −10（错）、反码得 −0（两个零）、补码得 0（对）</text>
+  <text x="600" y="628" text-anchor="middle" font-size="28" fill="#2D3748">补码让符号位和数值位一起参加加法：减法统一成加法，零还只有一个</text>
+  <text x="600" y="740" text-anchor="middle" font-size="28" fill="#2D3748">往后凡说"内存里存的位"，一律是补码 · 它就是拿去这样逐位加的那串 0 和 1</text>
+</svg>

@@ -1,0 +1,14 @@
+@startuml
+title 例 3.6 顺序结构盒图（%f 输出实数只有 6 位小数）
+start
+:定义 double a = 1.0;
+:printf("%f", a/3) → 输出 0.333333;
+stop
+
+note right
+  %f 默认 6 位小数
+  %m.nf 指定总宽 m、小数 n 位
+  %20.15f 可打 15 位小数
+  float 约 6 位、double 约 15 位有效数字
+end note
+@enduml

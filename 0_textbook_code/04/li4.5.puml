@@ -1,0 +1,16 @@
+@startuml
+title 例 4.5 选择结构盒图（阶跃函数 · if 嵌套）
+start
+:输入 x;
+if (x < 0 ?) then (是：y=-1)
+  :y = -1;
+else (否：x>=0，进内层)
+  if (x == 0 ?) then (是：y=0)
+    :y = 0;
+  else (否：x>0)
+    :y = 1;
+  endif
+endif
+:输出 x, y;
+stop
+@enduml

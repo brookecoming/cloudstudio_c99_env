@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Microsoft YaHei, PingFang SC, Segoe UI, sans-serif">
+  <rect x="0" y="0" width="1200" height="900" fill="#FFFFFF"/>
+
+  <!-- 标题 -->
+  <text x="600" y="50" text-anchor="middle" font-size="34" font-weight="bold" fill="#1A202C">字节数 · 有效数字 · 范围 —— 一张表看清（课本表 3.4）</text>
+
+  <!-- 导引带 -->
+  <rect x="110" y="64" width="980" height="54" rx="12" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="600" y="90" text-anchor="middle" font-size="23" font-weight="bold" fill="#075985">字节↑ → 有效数字↑、范围↑，两头一起涨，但不是按比例涨。</text>
+  <text x="600" y="112" text-anchor="middle" font-size="21" fill="#1A202C">"分几位字节"由编译系统定，下表按 Visual C++ 环境列出。</text>
+
+  <!-- 表头 -->
+  <rect x="120" y="130" width="200" height="44" fill="#1E293B"/>
+  <rect x="320" y="130" width="150" height="44" fill="#1E293B"/>
+  <rect x="470" y="130" width="180" height="44" fill="#1E293B"/>
+  <rect x="650" y="130" width="450" height="44" fill="#1E293B"/>
+  <text x="220" y="161" text-anchor="middle" font-size="25" font-weight="bold" fill="#FFFFFF">类型</text>
+  <text x="395" y="161" text-anchor="middle" font-size="25" font-weight="bold" fill="#FFFFFF">字节数</text>
+  <text x="560" y="161" text-anchor="middle" font-size="25" font-weight="bold" fill="#FFFFFF">有效数字</text>
+  <text x="875" y="161" text-anchor="middle" font-size="25" font-weight="bold" fill="#FFFFFF">数值范围（绝对值）</text>
+
+  <!-- 行1 float -->
+  <rect x="120" y="174" width="200" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="320" y="174" width="150" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="470" y="174" width="180" height="60" fill="#FFF7ED" stroke="#EA580C"/>
+  <rect x="650" y="174" width="450" height="60" fill="#EFF6FF" stroke="#3B82F6"/>
+  <text x="220" y="212" text-anchor="middle" font-size="26" font-weight="bold" fill="#1A202C">float</text>
+  <text x="395" y="212" text-anchor="middle" font-size="26" fill="#1A202C">4</text>
+  <text x="560" y="212" text-anchor="middle" font-size="26" font-weight="bold" fill="#7C2D12">6 位</text>
+  <text x="875" y="200" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">0 以及 1.2×10⁻³⁸</text>
+  <text x="875" y="226" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">~ 3.4×10³⁸</text>
+
+  <!-- 行2 double -->
+  <rect x="120" y="234" width="200" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="320" y="234" width="150" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="470" y="234" width="180" height="60" fill="#FFF7ED" stroke="#EA580C"/>
+  <rect x="650" y="234" width="450" height="60" fill="#EFF6FF" stroke="#3B82F6"/>
+  <text x="220" y="272" text-anchor="middle" font-size="26" font-weight="bold" fill="#1A202C">double</text>
+  <text x="395" y="272" text-anchor="middle" font-size="26" fill="#1A202C">8</text>
+  <text x="560" y="272" text-anchor="middle" font-size="26" font-weight="bold" fill="#7C2D12">15 位</text>
+  <text x="875" y="260" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">0 以及 2.3×10⁻³⁰⁸</text>
+  <text x="875" y="286" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">~ 1.7×10³⁰⁸</text>
+
+  <!-- 行3 long double -->
+  <rect x="120" y="294" width="200" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="320" y="294" width="150" height="60" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="470" y="294" width="180" height="60" fill="#FFF7ED" stroke="#EA580C"/>
+  <rect x="650" y="294" width="450" height="60" fill="#EFF6FF" stroke="#3B82F6"/>
+  <text x="220" y="332" text-anchor="middle" font-size="23" font-weight="bold" fill="#1A202C">long double</text>
+  <text x="395" y="332" text-anchor="middle" font-size="23" fill="#1A202C">8 (VC++)</text>
+  <text x="560" y="332" text-anchor="middle" font-size="26" font-weight="bold" fill="#7C2D12">15 位</text>
+  <text x="875" y="320" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">0 以及 2.3×10⁻³⁰⁸</text>
+  <text x="875" y="346" text-anchor="middle" font-size="21" font-weight="bold" fill="#1E40AF">~ 1.7×10³⁰⁸</text>
+
+  <!-- 数轴三范围带（还原课本图 3.12）+ 上溢/下溢 -->
+  <defs>
+    <marker id="ovf" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#EA580C"/>
+    </marker>
+  </defs>
+  <rect x="110" y="362" width="980" height="128" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5"/>
+  <text x="600" y="386" text-anchor="middle" font-size="22" font-weight="bold" fill="#1E40AF">"范围"其实是三段（课本图 3.12）：能存的 = 0，加上绝对值在 [最小, 最大] 之间的数</text>
+  <!-- 可存区间(蓝) + 下溢(红) -->
+  <rect x="250" y="418" width="250" height="12" fill="#3B82F6"/>
+  <rect x="500" y="418" width="200" height="12" fill="#FCA5A5"/>
+  <rect x="700" y="418" width="250" height="12" fill="#3B82F6"/>
+  <!-- 两端上溢：橙色箭头向外 = 绝对值越来越大、越界存不下 -->
+  <line x1="250" y1="424" x2="150" y2="424" stroke="#EA580C" stroke-width="10" marker-end="url(#ovf)"/>
+  <line x1="950" y1="424" x2="1050" y2="424" stroke="#EA580C" stroke-width="10" marker-end="url(#ovf)"/>
+  <circle cx="600" cy="424" r="8" fill="#16A34A" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- 区间名（轴上方） -->
+  <text x="198" y="410" text-anchor="middle" font-size="19" font-weight="bold" fill="#C2410C">上溢</text>
+  <text x="375" y="410" text-anchor="middle" font-size="18" font-weight="bold" fill="#1E40AF">存得下</text>
+  <text x="600" y="410" text-anchor="middle" font-size="19" font-weight="bold" fill="#B91C1C">下溢</text>
+  <text x="825" y="410" text-anchor="middle" font-size="18" font-weight="bold" fill="#1E40AF">存得下</text>
+  <text x="1002" y="410" text-anchor="middle" font-size="19" font-weight="bold" fill="#C2410C">上溢</text>
+  <!-- 刻度值（轴下方） -->
+  <text x="250" y="452" text-anchor="middle" font-size="19" fill="#1A202C">−3.4×10³⁸</text>
+  <text x="500" y="452" text-anchor="middle" font-size="19" fill="#1A202C">−1.2×10⁻³⁸</text>
+  <text x="600" y="452" text-anchor="middle" font-size="20" font-weight="bold" fill="#15803D">0</text>
+  <text x="700" y="452" text-anchor="middle" font-size="19" fill="#1A202C">1.2×10⁻³⁸</text>
+  <text x="950" y="452" text-anchor="middle" font-size="19" fill="#1A202C">3.4×10³⁸</text>
+  <text x="600" y="478" text-anchor="middle" font-size="19" fill="#1A202C">溢出 = 超出可存范围、存不下：橙(两端)=上溢·太大，红(中间)=下溢·太小，蓝和 0 才存得下</text>
+
+  <!-- 两条点破 -->
+  <rect x="120" y="500" width="460" height="82" rx="14" fill="#FFF7ED" stroke="#EA580C" stroke-width="3"/>
+  <text x="350" y="534" text-anchor="middle" font-size="24" font-weight="bold" fill="#7C2D12">有效数字 ← 尾数占的位（买精度）</text>
+  <text x="350" y="566" text-anchor="middle" font-size="22" fill="#1A202C">float 6 位、double 15 位</text>
+
+  <rect x="620" y="500" width="460" height="82" rx="14" fill="#DBEAFE" stroke="#3B82F6" stroke-width="3"/>
+  <text x="850" y="534" text-anchor="middle" font-size="24" font-weight="bold" fill="#1E40AF">数值范围 ← 指数占的位（买范围）</text>
+  <text x="850" y="566" text-anchor="middle" font-size="22" fill="#1A202C">指数定最小 1.2×10⁻³⁸、最大 3.4×10³⁸</text>
+
+  <!-- VC++ 提醒 -->
+  <rect x="120" y="594" width="960" height="76" rx="12" fill="#FEF9C3" stroke="#CA8A04" stroke-width="2"/>
+  <text x="140" y="624" font-size="22" font-weight="bold" fill="#713F12">别死记字节数：Visual C++ 里 long double = double（8 字节 / 15 位）；</text>
+  <text x="140" y="654" font-size="21" fill="#713F12">Turbo C 才给 long double 16 字节 / 19 位。换编译器数值会变（跟 int 有 2/4 字节一个道理）。</text>
+
+  <!-- 自动转 double -->
+  <rect x="120" y="680" width="960" height="50" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="600" y="712" text-anchor="middle" font-size="23" font-weight="bold" fill="#065F46">做浮点运算时，float 会先自动转成 double 再算（课本 §3.2.5）→ 结果按 double 精度走。</text>
+
+  <!-- 底部结论 -->
+  <rect x="120" y="740" width="960" height="110" rx="14" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="600" y="778" text-anchor="middle" font-size="25" font-weight="bold" fill="#1A202C">记这张表就够：float = 4 字节 / 6 位有效；double = 8 字节 / 15 位有效。</text>
+  <text x="600" y="812" text-anchor="middle" font-size="22" fill="#334155">范围别只记最大值——它是"0 + 绝对值 [1.2×10⁻³⁸, 3.4×10³⁸]"，太大上溢、太小下溢都存不下。</text>
+  <text x="600" y="840" text-anchor="middle" font-size="22" fill="#334155">字节翻倍（4→8），有效数字 6→15、范围 10³⁸→10³⁰⁸，两头一起变宽，但不是按比例。</text>
+</svg>

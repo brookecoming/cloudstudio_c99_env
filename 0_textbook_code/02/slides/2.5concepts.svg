@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.5　怎样表示一个算法</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.5，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P21</tspan>　常用的方法有：自然语言、传统流程图、结构化流程图和伪代码等</text>
+<text x="70" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P22</tspan>　流程图符号（图 2.3）：起止框、输入输出框、判断框、处理框、流程线、连接点、注释框</text>
+<text x="70" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P25</tspan>　1966 年，Bohra 和 Jacopini 提出了以下 3 种基本结构（顺序、选择、循环）</text>
+<text x="70" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P26</tspan>　循环结构有两类：当型（while 型）循环结构、直到型（until 型）循环结构</text>
+<text x="70" y="436" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P28</tspan>　1973 年，美国学者 I.Nassi 和 B.Shneiderman 提出 N-S 结构化流程图，完全去掉了带箭头的流程线</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】五种表示法 + 三种基本结构（顺序 / 选择 / 循环）　　【难点】当型先判断后执行、直到型先执行后判断</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】判断框一个入口、两个出口；N-S 图最大特点是“没有带箭头的流程线”</text>
+</svg>

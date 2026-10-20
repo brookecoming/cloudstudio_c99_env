@@ -1,0 +1,19 @@
+@startuml
+title 例 3.5 顺序结构盒图（键盘输入系数求方程实根）
+start
+:定义 double a, b, c, disc, x1, x2, p, q;
+:scanf("%lf%lf%lf", &a, &b, &c)（键盘输入，空格分隔）;
+:disc = b*b - 4*a*c;
+:p = -b/(2.0*a);
+:q = sqrt(disc)/(2.0*a);
+:x1 = p+q, x2 = p-q;
+:printf 输出 x1, x2（%7.2f 定宽对齐）;
+stop
+
+note right
+  scanf 变量前必加 & 取地址
+  读 double 用 %lf（输出用 %f）
+  sqrt 需 #include math.h
+  本例假设 disc>0，不判断
+end note
+@enduml

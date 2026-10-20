@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§3.4　C 语句·赋值语句（★★★硬核）</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="24" font-weight="bold" fill="#FBD38D">翻到课本 §3.4，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="244" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P58</tspan>　在 C 程序中，最常用的语句是：赋值语句和输入输出语句。其中最基本的是赋值语句</text>
+<text x="70" y="298" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P60</tspan>　对赋值表达式求解的过程是：先求赋值运算符右侧的"表达式"的值，然后赋给赋值运算符左侧的变量</text>
+<text x="70" y="352" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P59</tspan>　复合的赋值运算符：a+=3 等价于 a=a+3</text>
+<text x="70" y="406" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P63</tspan>　赋值表达式的末尾没有分号，而赋值语句的末尾必须有分号</text>
+<text x="70" y="460" font-family="Microsoft YaHei" font-size="21" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P63</tspan>　变量赋初值：int a=3;（指定 a 为整型变量，初值为 3）</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】先算右边表达式、再赋左边变量　　【难点】复合赋值 a+=3 等价 a=a+3；分清表达式与语句</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】赋值表达式末尾无分号、赋值语句必须有分号；定义时可赋初值 int a=3;</text>
+</svg>

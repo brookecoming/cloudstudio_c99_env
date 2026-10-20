@@ -1,0 +1,15 @@
+@startuml
+title 例 4.1 选择结构盒图（ax^2+bx+c=0 求根）
+start
+:输入 a, b, c;
+:disc = b*b - 4*a*c;
+if (disc < 0 ?) then (是：无实根)
+  :输出 This equation hasn't real roots;
+else (否：有实根)
+  :p = -b/(2*a);
+  :q = sqrt(disc)/(2*a);
+  :x1 = p+q, x2 = p-q;
+  :输出 x1, x2;
+endif
+stop
+@enduml

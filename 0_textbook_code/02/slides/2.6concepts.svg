@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 1280 960">
+<rect width="1280" height="960" fill="#F7FAFC"/>
+<rect x="40" y="28" width="1200" height="92" rx="14" fill="#2B6CB0"/>
+<text x="70" y="86" font-family="Microsoft YaHei" font-size="30" font-weight="bold" fill="#FFFFFF">【动笔划课本】　§2.6　结构化程序设计方法</text>
+<rect x="40" y="138" width="1200" height="678" rx="14" fill="#1A365D"/>
+<text x="70" y="186" font-family="Microsoft YaHei" font-size="23" font-weight="bold" fill="#FBD38D">翻到课本 §2.6，把下面这些【原句】用笔划出来（P 为课本页码）：</text>
+<text x="70" y="236" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P33</tspan>　结构化程序设计方法的基本思路是：把一个复杂问题的求解过程分阶段进行，</text>
+<text x="120" y="286" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#E2E8F0">每个阶段处理的问题都控制在人们容易理解和处理的范围内</text>
+<text x="70" y="336" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#FFFFFF"><tspan fill="#FBD38D">P33</tspan>　具体说，采取以下方法来保证得到结构化的程序：（1）自顶向下；（2）逐步细化；</text>
+<text x="120" y="386" font-family="Microsoft YaHei" font-size="20" font-weight="bold" fill="#E2E8F0">（3）模块化设计；（4）结构化编码</text>
+<rect x="40" y="832" width="1200" height="100" rx="14" fill="#4A5568"/>
+<text x="70" y="870" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FFFFFF">【重点】自顶向下、逐步细化、模块化设计、结构化编码　　【难点】分阶段把复杂度控制住</text>
+<text x="70" y="906" font-family="Microsoft YaHei" font-size="18" font-weight="bold" fill="#FEB2B2">【易错易混】“结构化”落到程序上，就是只用顺序 / 选择 / 循环三种基本结构</text>
+</svg>

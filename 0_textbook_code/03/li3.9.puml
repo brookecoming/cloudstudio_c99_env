@@ -1,0 +1,20 @@
+@startuml
+title 例 3.9 顺序结构盒图（getchar 读 BOY 再 putchar 输出）
+start
+:定义 char a, b, c;
+:a = getchar()（键盘读一个字符给 a）;
+:b = getchar()（读一个字符给 b）;
+:c = getchar()（读一个字符给 c）;
+:putchar(a) 输出 B;
+:putchar(b) 输出 O;
+:putchar(c) 输出 Y;
+:putchar('\n') 换行;
+stop
+
+note right
+  getchar 无参数，一次读一个字符
+  输入按行缓冲：按 Enter 才整行送入
+  回车也算一个字符（勿逐字母回车）
+  可合并为 putchar(getchar())
+end note
+@enduml
