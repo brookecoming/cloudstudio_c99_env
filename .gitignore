@@ -6,6 +6,31 @@ app
 *.exe
 *.dSYM/
 
+# CLion IDE 配置(本地专用,不提交)
+.idea/
+cmake-build-*/
+*.iml
+
+# AI 助教人设卡(本地/个人专用,不提交)
+AGENTS.md
+
 # 编辑器/系统临时文件
 *.swp
 .DS_Store
+
+# 脚本改 PPT/讲稿时生成的一次性备份副本（不入库）
+*.bak-*
+
+# 逐章一次性改稿/生成脚本（跑完即废；可复用引擎已收进 .qoder/skills/*/scripts，不入库）
+0_textbook_code/**/_*.py
+
+# 压缩包（勿将 .rar/.zip 等归并进配置/课件仓库）
+*.rar
+*.zip
+
+# 系统文件
+Thumbs.db
+
+# 教材扫描件与页面图（版权 + 体积，仅本地核对用，绝不提交到 GitHub）
+*.pdf
+0_textbook_code/**/textbook/

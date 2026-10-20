@@ -9,3 +9,14 @@ Makefile text eol=lf
 *.h      text eol=lf
 *.json   text eol=lf
 *.md     text eol=lf
+
+# 二进制文件：不做换行转换、不尝试 diff/merge（课件/图片等按原样存）
+# （binary = -diff -merge -text 的宏）
+*.pptx   binary
+*.docx   binary
+*.xlsx   binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
